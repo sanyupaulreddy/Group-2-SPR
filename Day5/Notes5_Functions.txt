@@ -1,0 +1,50 @@
+Function a block of code which is used to execute specific tasks.
+Function is the building block of code
+Functions are the reusable part of the code
+Functions are the non primitive data types
+
+SYNTAX: function func_name(optional parameters){
+        Statements
+     }
+
+
+//Without paramenteres
+function demo(){
+    console.log("Object");
+    }
+
+
+Note:- The current version of JavaScript id es14
+es-- ECMA script
+ECMA-European computer manufacturing association.
+-es6 feature is stable
+
+TYPES OF FUNCTIONS
+1.Named Function
+--It is the regular Function that is used with parameters or without paramenteres
+2.Anonymous Function
+--Function that does not have a name and cannot be executed on itself
+function(){
+    Statements;
+  }  
+3.Function Expression
+--Assingning the function body to some variable is called Function variable.
+--Accepts Primitive or Non primitive data types
+let x=function(){
+    console.log("Anonymous is not executing but the variable is being executed");
+   }
+x();    
+4.IIFE(Immediate Intimate Function Expression) 
+--It is invoked only one time
+5.Arrow Function
+--Introduced in the es6 feature
+--It is the consise form of the function
+--Syntax ()=>{};
+6.Higher Order Function
+7.Callback Function
+
+->Explicit Return is a keywords where we need to mention the keyword Return
+Can be used in the Regular functions.
+->Implicit Returnis used where the keyword need not be mentioned and is used in the Arrow functions.
+
+NOTE:-No printing Statements will work  after the Return Statement.
