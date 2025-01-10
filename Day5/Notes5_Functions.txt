@@ -40,11 +40,18 @@ x();
 --Introduced in the es6 feature
 --It is the consise form of the function
 --Syntax ()=>{};
+
 6.Higher Order Function
+--Higher Order Function is a function which accepts another function as 
 7.Callback Function
+--This is a function where the 
 
 ->Explicit Return is a keywords where we need to mention the keyword Return
 Can be used in the Regular functions.
 ->Implicit Returnis used where the keyword need not be mentioned and is used in the Arrow functions.
 
 NOTE:-No printing Statements will work  after the Return Statement.
+
+
+CLOSURE:-
+Closure is a menory created when functions are bundled together or nested together by doing accessibility
