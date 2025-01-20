@@ -1,0 +1,29 @@
+ARRAYS
+-Arrays is a non primitive data type
+-Arrays are used to store multiple data values of single data type
+-Syntax []
+
+THe difference between between map and for each method is
+    -MAP is used to iterate the values 
+    -it returns new copied array from the original array
+
+    -FOREach is used to iterate the values
+    -it returns "Undefined"
+
+**********************************
+
+Create array of objects
+
+What is object?
+=Object is an entity which contains states and behaviours
+=States, Properties, Behaviour, Functionality
+=Object is an entity to store the values on the form of key and value pair.
+
+-SYNTAX:  let obj = {};
+Example: let userdetails={
+         name="Sanyu"
+         age:19
+         }
+
+NOTE: Javascript is mainly the object based language till 2015(es6)
+    -After es6 feature they added OOPS concept.
