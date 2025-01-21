@@ -1,0 +1,49 @@
+JSON****
+--JSON stands for Javascript object Notation
+--JSON is the Javascript technique used to transfer the data between client to server and server to client.
+
+SYNTAX:
+JS object:-
+***************
+let a = {
+        "name":"Sanyu",
+        "age"=19
+    }    
+
+JSON object:-
+***************
+let a = {
+        "name":"Sanyu",
+        "age"=19
+    } 
+
+--For creation of the JSON file we need to create is as "Filename.json" 
+
+JSON Methods
+1. JSON.Stringify()-Used to convert the JS object to JSON Object
+2. JSON.Parse()-Used to convert JSON object to JS object
+
+Asynchronous in Javascript:-
+***************************
+=Javascript is by default syncronous ie (single threaded).
+=Asynchronousis used to perform multiple tasks at a time
+
+    -setTimeout():- it is the web api used to perform asyn operations with certain time intervals
+    SYNTAX:setTimeout(()=>{
+         ..................
+         )}
+    
+  
+    -setInterval():-Used to perform api operations at certain time intervals
+    SYNTAX:setInterval(()=>{
+         ..................
+         )}
+
+
+    -promise:-Promise is an object which represents eventual completion or failures of Asynchronous operations
+      *States of Promise
+        1)pending State
+        2)Fulfilled State
+        3)Rejected State
+    
+    -async and await
