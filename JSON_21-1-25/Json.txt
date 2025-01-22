@@ -28,22 +28,44 @@ Asynchronous in Javascript:-
 =Javascript is by default syncronous ie (single threaded).
 =Asynchronousis used to perform multiple tasks at a time
 
-    -setTimeout():- it is the web api used to perform asyn operations with certain time intervals
+1)setTimeout():- it is the web api used to perform asyn operations with certain time intervals
     SYNTAX:setTimeout(()=>{
          ..................
          )}
     
   
-    -setInterval():-Used to perform api operations at certain time intervals
+2)setInterval():-Used to perform api operations at certain time intervals
     SYNTAX:setInterval(()=>{
          ..................
          )}
 
 
-    -promise:-Promise is an object which represents eventual completion or failures of Asynchronous operations
+3)promise:-Promise is an object which represents eventual completion or failures of Asynchronous operations.
       *States of Promise
         1)pending State
         2)Fulfilled State
         3)Rejected State
-    
-    -async and await
+SYNTAX:
+    let variable = new Promise((resolve, reject)=>{
+                console.log("");
+    {);
+
+    To execute the promise we have instance methods:-
+    1)then():It is used to execute success or fulfilled state results
+    2)catch():It is used to execute rejected state results
+    3)finally():THis will get executed irrespective of the executoin ie success or failure.
+
+
+4)async and await
+
+
+
+
+******************
+CRUD operations
+Create - Insert
+Read - Get
+Update - Put
+Delete - Delete(Destroy)
+
+URL:https://jsonplaceholder.typicode.com/users
