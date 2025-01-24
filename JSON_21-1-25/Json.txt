@@ -92,3 +92,9 @@ DOM METHODS
 4.document.getElementsByName(""):-It is ised to select html elements based on their name.
 5.document.querySelector("#id"):-Used to select single element or id.
 6.document.querySelectorAll(".class");It is used to select multiple elements.
+
+
+********************************************************************************
+EVENTS---
+-Events are nothing but an actions performed on the html element
+-in DOM, we have events like click, mouse and key events
