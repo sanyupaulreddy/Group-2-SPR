@@ -98,3 +98,16 @@ DOM METHODS
 EVENTS---
 -Events are nothing but an actions performed on the html element
 -in DOM, we have events like click, mouse and key events
+
+Click events:- onClick, ondblClick, onSubmit, onChange
+
+mouseEvents:- mouseover, mouseleave
+
+key events:- keydown, keyup, keypress(deprocated).
+
+*************************************************************************************
+Dynamic creation of HTML element in js:
+
+-To create html element in js we use a method called "document.createElement";
+
+-By default elements created in js will not added to the document, so we have to add to 

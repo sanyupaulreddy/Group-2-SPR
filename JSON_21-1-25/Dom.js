@@ -38,7 +38,18 @@
 // let ele=document.querySelectorAll(".test");
 // console.log(ele);
 
-let demo=document.getElementById("demo");
-demo.addEventListener("Click",()=>{
-    console.log("Button Click")
+// let demo=document.getElementById("demo");
+// demo.addEventListener("Click",()=>{
+//     console.log("Button Click")
+// })
+
+let bgColor = document.querySelectorAll(".bgColor");
+[...bgColor].map(element=>{
+    element.addEventListener("mouseover",()=>{
+        // console.log(element);
+        element.style.backgroundColor=element.innerText;
+    });
+    element.addEventListener("mouseleave",()=>{
+        element.style.backgroundColor="transparent";
+    })
 })
