@@ -42,19 +42,32 @@
 // document.body.appendChild(mainEle);
 
 let form=document.querySelector("form");
-let username=document.getElementById("uText");
-let password=document.getElementById("UPass");
+let username=document.getElementById("uName");
+let password=document.getElementById("uPass");
+let check=document.getElementById("check");
+let show=document.getElementById("show");
 
-let gender=document.getElementsByName("Gender");
+let gender=document.getElementsByName("gender");
 
+check.addEventListener("click",(event)=>{
+    console.log(event.target.checked);
+    if(event.target.checked==true){
+        password.setAttribute("type","text");
+        show.innerText="Hide Password";
+    }else{
+        password.setAttribute("type","password");
+        show.innerText="Show Password"
+    }
+})
 form.addEventListener("submit", event=>{
     event.preventDefault();
     let un=username.value;
     let up=password.value;
+    let gen="";
 
-    for(let i=0;i<=Gender.length-1;i++){
-        if(Gender[i].checked == true){
-            gen +=Gender[i].value;
+    for(let i=0;i<=gender.length-1;i++){
+        if(gender[i].checked == true){
+            gen +=gender[i].value;
         }
     };
     let userDetails={

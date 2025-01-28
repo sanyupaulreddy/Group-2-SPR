@@ -15,21 +15,23 @@
     </form> -->
     <form action="">
         <div class="formgroup">
-            <label for="uText">Username</label>
-            <input type="text" id="uText" placeholder="Enter Username">
+            <label for="uName">Username</label>
+            <input type="text" id="uName" placeholder="Enter Username">
         </div>
         <div class="formgroup">
             <label for="uPass">Password
             </label>
             <input type="password" id="uPass" placeholder="Enter Password">
+            <input type="checkbox" id="check">
+            <span id="show">Show Password</span>
         </div>
         <div class="formgroup">
-            <label for="">Gender</label>
-            <input type="radio" name="Gender">Male
-            <input type="radio" name="Gender">Female
-            <input type="radio" name="Gender">Others
+            <label>Gender</label>
+            <input type="radio" name="gender" value="male"><span>Male</span>
+            <input type="radio" name="gender" value="female"><span>Female</span>
+            <input type="radio" name="gender" value="others"><span>Others</span>s
         </div>
-        <button>Submit</button>
+        <input type="submit">
     </form>
     <script src="Dom1.js"></script>
 </body>

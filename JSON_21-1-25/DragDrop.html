@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            padding: auto;
+            display: flex;
+            align-items: center;
+            background-color: aquamarine;
+            justify-content: center;
+        }
+        .container{
+            background-color: coral;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            height: 500px;
+            width: 350px;
+        }
+        #left, #right{
+            width: 300px;
+            height: 250px;
+            background-color: blueviolet;
+            border-width: 0cm;
+        }
+    </style>
+    <div class="container">
+        <div id="left">
+            left
+            <div class="items" draggable="true">Items1</div>
+            <div class="items" draggable="true">Items2</div>
+            <div class="items" draggable="true">Items3</div>
+            <div class="items" draggable="true">Items4</div>
+            <div class="items" draggable="true">Items5</div>
+        </div>
+        <div id="right">
+            right
+        </div>
+
+    </div>
+    <script>
+        let items=document.querySelectorAll(".items");
+        let left=document.getElementById("left");
+        let right=document.getElementById("right");
+        [...items].map(element=>{
+            element.addEventListener("dragstart",(event)=>{
+                let selected=event.target;
+                right.addEventListener("")
+                right.addEventListener("drop"),()=>{
+                    console.log("dropping");
+
+                }
+            })
+        })
+
+
+    
+    </script>
+</body>
+</html>
