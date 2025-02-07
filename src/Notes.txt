@@ -1,0 +1,75 @@
+components:-
+components is a files just containing javascript related codes. 
+components are divided into 2 types.they are, 
+1.class based component 
+2.functional based component 
+1.class based component:-
+- class component ism similar to javascript es6 class. 
+- class component is a "statefull" component by default because class component consist of 
+syntax: -
+    class App extends React.Component{ 
+        render() 
+        { 
+        return( 
+            //jsx 
+        ) 
+    }
+2. functional components:-
+- this is similar to javascript function. 
+- functional component is la "stateless component" until React v16.8, later FBC also becomes 
+syntax: 
+    fucntion App(){ 
+        return( 
+            //jsx 
+        } 
+            or 
+        const App (){ 
+            return( 
+                //jsx
+                )
+            }
+
+    }
+
+Component Composition
+*********************
+
+-Component composition is a combination of multiple files/components to make single application
+
+Note:-any component created in react app must be created by a name which is starting from the capital letter
+    ex:App.js/App.jsx
+
+-how to call a child component inside a parent component.
+    ex:-<App></App>
+
+**Whywe should use the box-sizzing border-box property       
+
+Note 
+rcc-to create reactclass component
+rfce-to create react function component
+rafce-to create react arrow functional component
+
+
+Props:-
+******
+-Props is an object
+-Props is similar to Html attributes
+-Props is an object used to exchange the information from parent component to the child component
+Syntax: <Child username=''/>
+-Note:-Props cannot be passed from child component to the parent component
+
+
+Note:-This keyword always targets the current variable
+
+Functional Component:-
+-functional component is a steteless by default until react v16.8
+-later functional components becomes stateful with the help of "Hooks" concept.
+Symtax: const[state,setState]=useState(initialValue);
+
+Hooks:-
+-Hooks are nothing but the functions which implemented all the features of class based components
+
+basic Hooks are:
+1.useState();
+2.UseEffect();
+3.useContext();
