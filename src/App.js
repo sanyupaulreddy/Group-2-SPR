@@ -114,13 +114,42 @@
 // }
 
 // export default App;
+// import React from "react";
+// import CBCStateEx from './components/CBCStateEx';
+
+// const App=()=>{
+//   return(
+//     <div>
+//       <CBCStateEx/>
+//     </div>
+//   )
+
+// }
+// export default App;
+
+// import React from 'react';
+// import FuctionalComponents from '.src/components/FuctionalComponents';
+
+// const App = () => {
+//   return (
+//     <div>
+//     <FuctionalComponents 
+//       clg='MRU' city="Hyderabad"
+//     />  
+//     </div>
+//   );
+// };
+
+// export default App;
+
+
 import React from "react";
-import CBCStateEx from './components/CBCStateEx';
+import UseEffectEx from './components/UseEffectEx';
 
 const App=()=>{
   return(
     <div>
-      <CBCStateEx/>
+      <UseEffectEx/>
     </div>
   )
 

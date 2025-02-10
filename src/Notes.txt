@@ -73,3 +73,13 @@ basic Hooks are:
 1.useState();
 2.UseEffect();
 3.useContext();
+
+
+
+UseEffect():
+Useeffect hook is used for appying the side effects in the components
+
+List and keys:
+
+React.Fragments: It will act as a parent element for the jsx element s but it wont create an extra node 
+
