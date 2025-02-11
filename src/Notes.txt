@@ -73,11 +73,17 @@ basic Hooks are:
 1.useState();
 2.UseEffect();
 3.useContext();
-
+4.useRef();
+************************
 
 
 UseEffect():
 Useeffect hook is used for appying the side effects in the components
+
+useRef():
+--it is used to target the native/real dom elements.
+--ref should be avoided using more 
+
 
 List and keys:
 

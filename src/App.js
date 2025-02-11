@@ -144,12 +144,14 @@
 
 
 import React from "react";
-import UseEffectEx from './components/UseEffectEx';
+// import UseEffectEx from './components/UseEffectEx';
+import RefExample from "./components/RefExample";
 
 const App=()=>{
   return(
     <div>
-      <UseEffectEx/>
+     
+      <RefExample/>
     </div>
   )
 
