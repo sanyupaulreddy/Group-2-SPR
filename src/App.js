@@ -143,17 +143,71 @@
 // export default App;
 
 
-import React from "react";
-// import UseEffectEx from './components/UseEffectEx';
-import RefExample from "./components/RefExample";
+// import React from "react";
+// // import UseEffectEx from './components/UseEffectEx';
+// import RefExample from "./components/RefExample";
 
-const App=()=>{
-  return(
-    <div>
+// const App=()=>{
+//   return(
+//     <div>
      
-      <RefExample/>
+//       <RefExample/>
+//     </div>
+//   )
+
+// }
+// export default App;
+
+// import React from 'react';
+// // import Logo from './components/Logo';
+// // import Menu from './components/Menu';
+// import Navbar from './components/Navbar';
+// import {BrowserRouter, Routes, Route} from "react-router-dom";
+// import Dashboard from './pages/Dashboard';
+// import Classrooms from './pages/Classrooms';
+// import Assesments from './pages/Assesments';
+// import Store from './pages/Store';
+// import Calender from './pages/Calender';
+// import News from './pages/News';
+// import Blog from './pages/Blog';
+// import PageNotFound from './pages/PageNotFound';
+// import MyAccount from './pages/MyAccount';
+// import Profile from './pages/Profile';
+// const App =() => {
+//     return (
+//         <BrowserRouter>
+//         <Navbar/>
+//         <Routes>
+//             <Route path='/' element={<Dashboard/>}/>
+//             <Route path='/classrooms' element={<Classrooms/>}/>
+//             <Route path='/assesments' element={<Assesments/>}/>
+//             <Route path='/store' element={<Store/>}/>
+//             <Route path='/calender' element={<Calender/>}/>
+//             <Route path='/news' element={<News/>}/>
+//             <Route path='/blog' element={<Blog/>}/>
+//             <Route path='/profile' element={<Profile/>}>
+//             <Route path='/profile/myaccount' element={<MyAccount/>}/>
+//             <Route path='/profile/mysetting' element={<MyAccount/>}/>
+//             </Route>
+//             <Route path='*' element={<PageNotFound/>}/>
+            
+
+//         </Routes>
+//       </BrowserRouter>
+//     );
+// };
+
+// export default App;
+
+import React from 'react'
+import FormExample from './components/FormExample'
+
+const App = () => {
+  return (
+    <div>
+      <FormExample/>
     </div>
   )
-
 }
-export default App;
+
+export default App

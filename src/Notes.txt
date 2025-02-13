@@ -89,3 +89,12 @@ List and keys:
 
 React.Fragments: It will act as a parent element for the jsx element s but it wont create an extra node 
 
+
+
+REACT ROUTER:-
+*************************
+
+-Navigation between two pages without reloading the web page 
+-It is used by third-party library "react-router-dom" 
+- it is not a part of the react
+-npm install react-router-dom@latest
