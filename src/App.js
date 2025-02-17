@@ -211,13 +211,22 @@
 // }
 
 // export default App
-import React from 'react'
-import Home from './CRUD/Home'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./CRUD/Home";
+import Create from "./CRUD/Create";
+import Edit from "./CRUD/Edit";
 
 const App = () => {
   return (
-    <div><Home/></div>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/edit/:id" element={<Edit />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;

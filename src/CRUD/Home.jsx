@@ -1,17 +1,36 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom"; 
+import axios from "axios";
 import "./Home.css";
-import axios from 'axios';
+import { toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
 const Home = () => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:8000/users") // Update with your correct API endpoint
-        .then(res => {
-            setUsers(res.data);
-        })
-        .catch(err => console.error("Error fetching users:", err));
+        axios.get("http://localhost:8000/users") 
+            .then(response => setUsers(response.data))
+            .catch(error => {
+                console.error("Error fetching users:", error);
+                toast.error("Failed to load users!");
+            });
     }, []);
+
+    const deleteUser = (id) => {
+        const confirmDelete = window.confirm("Are you sure you want to delete this user?");
+        if (confirmDelete) {
+            axios.delete(`http://localhost:8000/users/${id}`)
+                .then(() => {
+                    toast.success("User deleted successfully!");
+                    setUsers(users.filter(user => user.id !== id));  
+                })
+                .catch(error => {
+                    console.error("Error deleting user:", error);
+                    toast.error("Failed to delete user!");
+                });
+        }
+    };
 
     return (
         <section id="homeBlock">
@@ -20,28 +39,42 @@ const Home = () => {
                 <table>
                     <thead>
                         <tr>
-                            <th>S.No</th>
+                            <th>SI.No</th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Phone No</th>
+                            <th>Phone</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {
-                            users.map((user, i) => (
-                                <tr key={i}>
-                                    <td>{user.id}</td>
+                        {users.length > 0 ? (
+                            users.map((user, index) => (
+                                <tr key={user.id}>
+                                    <td>{index + 1}</td>
                                     <td>{user.name}</td>
                                     <td>{user.email}</td>
                                     <td>{user.phone}</td>
+                                    <td>
+                                        <Link to={`/edit/${user.id}`}>
+                                            <button className="edit-btn">Edit</button>
+                                        </Link>
+                                        <button className="delete-btn" onClick={() => deleteUser(user.id)}>Delete</button>
+                                    </td>
                                 </tr>
                             ))
-                        }
+                        ) : (
+                            <tr>
+                                <td colSpan="5" style={{ textAlign: "center" }}>No data available</td>
+                            </tr>
+                        )}
                     </tbody>
                 </table>
+                <Link to="/create">
+                    <button>Create</button>
+                </Link>
             </article>
         </section>
     );
-}
+};
 
 export default Home;

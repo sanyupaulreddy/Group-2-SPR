@@ -1,23 +1,22 @@
 {
-    "users": [
-      {
-        "id": "1",
-        "name": "Sanyu Paul",
-        "email": "mr.paul@gmail.com",
-        "phone": "9876543210"
-      },
-      {
-        "id": "2",
-        "name": "Pranav",
-        "email": "pandi@gmail.com",
-        "phone": "8876543210"
-      },
-      {
-        "id": "3",
-        "name": "Koushik",
-        "email": "kou@gmail.com",
-        "phone": "9999999999"
-      }
-    ]
-  }
-  
+  "users": [
+    {
+      "id": "1",
+      "name": "Sanyu Paul",
+      "email": "mr.paul@gmail.com",
+      "phone": "9876543210"
+    },
+    {
+      "name": "Pranav Kalesh",
+      "email": "pandi@gmail.com",
+      "phone": "8876543210",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "Koushik",
+      "email": "kou@gmail.com",
+      "phone": "9999999999"
+    }
+  ]
+}

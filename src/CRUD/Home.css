@@ -1,25 +1,51 @@
-#homeBlock{
-    width:100%;
+#homeBlock {
+    width: 100%;
     margin-top: 70px;
+    background-color:lightgreen;
 }
 
-#homeBlock > article{
+#homeBlock > article {
     width: 80%;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-#homeBlock > article > h1{
+#homeBlock > article > h1 {
     font-size: 35px;
     font-family: sans-serif;
     color: blue;
+    background-color: antiquewhite;
 }
 
-.createBtn > a{
+/* Table Styling */
+table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    border-color: crimson;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+    font-style: italic;
+    color: goldenrod;
+}
+
+/* Button Styling */
+.createBtn > a {
     text-decoration: none;
     padding: 10px 30px;
-    background-color: dodgerblue;
-    
-    
+    background-color: rgb(29, 185, 177);
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
 }
