@@ -199,14 +199,24 @@
 
 // export default App;
 
+// import React from 'react'
+// import FormExample from './components/FormExample'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <FormExample/>
+//     </div>
+//   )
+// }
+
+// export default App
 import React from 'react'
-import FormExample from './components/FormExample'
+import Home from './CRUD/Home'
 
 const App = () => {
   return (
-    <div>
-      <FormExample/>
-    </div>
+    <div><Home/></div>
   )
 }
 
